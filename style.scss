@@ -38,6 +38,8 @@ a {
     background-position: center;
     position: relative;
     z-index: 1;
+    // transition: 6s ease;  
+    // transition-property: background-color
 }
 
     #name::after {
@@ -59,15 +61,39 @@ a {
             font-size: 4rem;
             position: relative;
             color:$secondary-color;
+
+        }
         
-           
-       
+         #name h2 {
+ 
+            display: block;
+            width: fit-content;
+            font-size: 2rem;
+            position: relative;
+            color:$color4;
         
-        
-    
-    
-    
-}
+        } 
+
+        #name .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            color:($third-color);
+            background-color: transparent;
+            border : 2px solid ($third-color);
+            border-radius: 25px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            margin-top: 30px;   
+            transition: .3s ease;  
+            transition-property: background-color, color;
+            
+        }
+            #name .btn:hover {
+                background-color: $third-color;
+                color:$primary-color;
+            }
+
 #name .btn {
 display: inline-block;
 padding: 10px 30px;
@@ -82,13 +108,4 @@ margin-top: 30px;
 
 }
 
-#name h2 {
- 
-        display: block;
-        width: fit-content;
-        font-size: 2rem;
-        position: relative;
-        color:$color4;
-
-}
   
