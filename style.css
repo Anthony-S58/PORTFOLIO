@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2? family = PT + Sans + Narrow & display = swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#name {
+  background-image: url(/IMG/fond2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+#name::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #191516;
+  opacity: .7;
+  z-index: -1;
+}
+
+#name h1 {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: #FEFEFF;
+}
+
+#name .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #FE9000;
+  background-color: transparent;
+  border: 2px solid #FE9000;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 30px;
+}
+
+#name h2 {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2rem;
+  position: relative;
+  color: #3ed3cb;
+}
+/*# sourceMappingURL=style.css.map */

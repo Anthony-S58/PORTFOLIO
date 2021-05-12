@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2? family = PT + Sans + Narrow & display = swap');
+
+$primary-color: #191516;
+$secondary-color: #FEFEFF;
+$third-color: #FE9000;
+$color4: #3ed3cb;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// section nom et prenom
+
+#name {
+    background-image: url(/IMG/fond2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+    #name::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color:$primary-color;
+        opacity: .7;
+        z-index: -1;
+        
+    }
+    
+        #name h1 {
+            display: block;
+            width: fit-content;
+            font-size: 4rem;
+            position: relative;
+            color:$secondary-color;
+        
+           
+       
+        
+        
+    
+    
+    
+}
+#name .btn {
+display: inline-block;
+padding: 10px 30px;
+color:($third-color);
+background-color: transparent;
+border : 2px solid ($third-color);
+font-size: 2rem;
+text-transform: uppercase;
+letter-spacing: .1rem;
+margin-top: 30px;
+
+
+}
+
+#name h2 {
+ 
+        display: block;
+        width: fit-content;
+        font-size: 2rem;
+        position: relative;
+        color:$color4;
+
+}
+  
