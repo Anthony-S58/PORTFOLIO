@@ -221,17 +221,72 @@ margin-top: 30px;
         align-items: flex-start;
         justify-content: center;
         font-size:6em;
-        text-shadow: 3px 3px 7px $primary-color;
+        text-shadow: 2px 2px 4px $secondary-color;
         color: $third-color;
     }
     
-    // section nom et prenom
-    
     #projet {
-        background-image: url(IMG/fond3.jpg);
+        background-image: url(/IMG/fond3.jpg);
         background-size: cover;
         background-position: center;
         position: relative;
-        z-index: 1;
+        
        
     }
+
+    .projet1{
+        margin-top: -650px;
+      
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: white;
+        border-radius:40px;
+        background-color: rgba(255, 255, 255, 0.308);
+
+    }
+
+    .projet2{
+        
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: white;
+        border-radius:40px;
+        background-color: rgba(255, 255, 255, 0.308);
+
+        
+    }
+    .projet3{
+        
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: white;
+        border-radius:40px;
+        background-color: rgba(255, 255, 255, 0.308);
+
+
+        
+    }
+
+    .projet1 img, .projet2 img, .projet3 img {
+        border-radius:40px;
+        
+    }
+
+    h3 {
+        font-size: 4em;
+        color: $color4;
+        text-shadow: 3px 3px 7px $primary-color;
+        margin:10px;
+    }
+
+    .projet1 p, .projet2 p, .projet3 p {
+        font-size:3em;
+        text-shadow: 3px 3px 7px $primary-color;
+        margin: 25px;
+
+    }
+
+    
