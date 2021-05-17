@@ -38,8 +38,7 @@ a {
     background-position: center;
     position: relative;
     z-index: 1;
-    // transition: 6s ease;  
-    // transition-property: background-color
+   
 }
 
     #name::after {
@@ -108,4 +107,91 @@ margin-top: 30px;
 
 }
 
-  
+// fin section nom et prenom
+
+
+// section à propos
+
+
+#about {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.portrait img{
+    margin: 50px;
+    border-radius: 5px;
+    border: 3px solid $color4;
+   
+    
+}
+.texte h2{
+    
+    font-size:6em;
+    text-shadow: 3px 3px 7px $primary-color;
+    color: $third-color;
+    
+    
+    
+}
+.texte p{
+    margin: 50px;
+    font-size: 3em;
+    
+}
+
+// Fin de section A propos
+
+// Section Mes Skills
+
+
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+
+    .cadre1 {
+        height: 300px;
+        width: 500px;
+        font-size:2em;
+        text-shadow: 3px 3px 7px $primary-color;
+        color: $color4;
+        background-color: $primary-color;
+        border-radius:40px;
+        border: 3px solid $color4;
+    }
+
+    .cadre2 {
+        height: 300px;
+        width: 500px;
+        font-size:2em;
+        text-shadow: 3px 3px 7px $primary-color;
+        color: $color4;
+        background-color: $primary-color;
+        border-radius:40px;
+        border: 3px solid $color4;
+
+    }
+
+    .cadre3 {
+        height: 300px;
+        width: 500px;
+        font-size:2em;
+        text-shadow: 3px 3px 7px $primary-color;
+        color: $color4;
+        background-color: $primary-color;
+        border-radius:40px;
+        border: 3px solid $color4;
+
+    }
+
+
+
+
