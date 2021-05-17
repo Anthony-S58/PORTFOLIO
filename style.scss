@@ -158,7 +158,7 @@ margin-top: 30px;
 }
 
     .cadre1 {
-        height: 300px;
+        height: 220px;
         width: 500px;
         font-size:2em;
         text-shadow: 3px 3px 7px $primary-color;
@@ -166,10 +166,11 @@ margin-top: 30px;
         background-color: $primary-color;
         border-radius:40px;
         border: 3px solid $color4;
+       
     }
 
     .cadre2 {
-        height: 300px;
+        height: 220px;
         width: 500px;
         font-size:2em;
         text-shadow: 3px 3px 7px $primary-color;
@@ -177,11 +178,13 @@ margin-top: 30px;
         background-color: $primary-color;
         border-radius:40px;
         border: 3px solid $color4;
+       
+
 
     }
 
     .cadre3 {
-        height: 300px;
+        height: 220px;
         width: 500px;
         font-size:2em;
         text-shadow: 3px 3px 7px $primary-color;
@@ -189,9 +192,46 @@ margin-top: 30px;
         background-color: $primary-color;
         border-radius:40px;
         border: 3px solid $color4;
-
+        
     }
 
+    .cadre1 img, .cadre2 img, .cadre3 img{
+        filter: grayscale(1);
+        margin: 10px;
 
+        
+       
+    }
 
+    .skills img:hover{
+        filter: none;
+       
+       
+    }
 
+   
+    // Fin section mes skills
+
+    // Mes projets
+
+    #projet h2 {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        font-size:6em;
+        text-shadow: 3px 3px 7px $primary-color;
+        color: $third-color;
+    }
+    
+    // section nom et prenom
+    
+    #projet {
+        background-image: url(IMG/fond3.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+       
+    }
