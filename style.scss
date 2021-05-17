@@ -212,7 +212,7 @@ margin-top: 30px;
    
     // Fin section mes skills
 
-    // Mes projets
+    // Section Mes projets
 
     #projet h2 {
         min-height: 100vh;
@@ -236,7 +236,8 @@ margin-top: 30px;
 
     .projet1{
         margin-top: -650px;
-      
+       margin-left: 10px;
+       margin-right: 10px;
         display: flex;
         justify-content: space-around;
         text-align: center;
@@ -247,7 +248,7 @@ margin-top: 30px;
     }
 
     .projet2{
-        
+        margin: 10px;
         display: flex;
         justify-content: space-around;
         text-align: center;
@@ -258,7 +259,7 @@ margin-top: 30px;
         
     }
     .projet3{
-        
+        margin: 10px;
         display: flex;
         justify-content: space-around;
         text-align: center;
@@ -272,6 +273,7 @@ margin-top: 30px;
 
     .projet1 img, .projet2 img, .projet3 img {
         border-radius:40px;
+        margin-top: 5px;
         
     }
 
@@ -289,4 +291,41 @@ margin-top: 30px;
 
     }
 
+    #projet a{
+        color:$color4;
+    }
+
+    //  Fin section mes projets
+
+
+    // Section Mon parcours
+
+
+.parcours h2{
     
+    font-size:6em;
+    text-shadow: 3px 3px 7px $primary-color;
+    color: $third-color;
+    
+    
+    
+}
+
+
+// Section Contact
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+}
+.contact h2{
+    
+    font-size:6em;
+    text-shadow: 3px 3px 7px $primary-color;
+    color: $third-color;
+    
+    
+    
+}
