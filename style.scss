@@ -159,60 +159,33 @@ margin-top: 30px;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    animation: slide 17s linear 0s infinite normal forwards;
+
+    @keyframes slide {
+        0% {
+         
+          transform: translateX(1600px);
+        }
+        45% {
+            transform: translateX(0);
+        }
+        // 50% {
+        //     transform: translateX(0);
+        // }
+        55% {
+            transform: translateX(0);
+            
+        }
+        100% {
+         
+          transform: translateX(-1600px);
+         
+
+        }
+      }
     
 }
 
-    .cadre1 {
-        height: 220px;
-        width: 500px;
-        font-size:2em;
-        text-shadow: 3px 3px 7px $primary-color;
-        color: $color4;
-        background-color: $primary-color;
-        border-radius:40px;
-        border: 3px solid $color4;
-       
-    }
-
-    .cadre2 {
-        height: 220px;
-        width: 500px;
-        font-size:2em;
-        text-shadow: 3px 3px 7px $primary-color;
-        color: $color4;
-        background-color: $primary-color;
-        border-radius:40px;
-        border: 3px solid $color4;
-       
-
-
-    }
-
-    .cadre3 {
-        height: 220px;
-        width: 500px;
-        font-size:2em;
-        text-shadow: 3px 3px 7px $primary-color;
-        color: $color4;
-        background-color: $primary-color;
-        border-radius:40px;
-        border: 3px solid $color4;
-        
-    }
-
-    .cadre1 img, .cadre2 img, .cadre3 img{
-        filter: grayscale(1);
-        margin: 10px;
-
-        
-       
-    }
-
-    .skills img:hover{
-        filter: none;
-       
-       
-    }
 
    
     // Fin section mes skills
@@ -241,36 +214,38 @@ margin-top: 30px;
 
     .projet1{
         margin-top: -650px;
-       margin-left: 10px;
-       margin-right: 10px;
+       margin-left: 50px;
+       margin-right: 50px;
         display: flex;
         justify-content: space-around;
         text-align: center;
         color: white;
         border-radius:40px;
-        background-color: rgba(255, 255, 255, 0.308);
+        background-color: rgba(255, 255, 255, 0.075);
 
     }
 
     .projet2{
-        margin: 10px;
+        margin: 50px;
         display: flex;
         justify-content: space-around;
         text-align: center;
         color: white;
         border-radius:40px;
-        background-color: rgba(255, 255, 255, 0.308);
+        background-color: rgba(255, 255, 255, 0.075);
 
         
     }
     .projet3{
-        margin: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
         display: flex;
         justify-content: space-around;
         text-align: center;
         color: white;
         border-radius:40px;
-        background-color: rgba(255, 255, 255, 0.308);
+        background-color: rgba(255, 255, 255, 0.075);
 
 
         
@@ -345,6 +320,7 @@ textarea {
     font-size: 2em;
     color: rgba(179, 175, 175, 0.603);
     background-color: transparent;
+    resize: none;
 
 }
 
@@ -360,7 +336,7 @@ input {
 .valider {
     width: 200px;
     height:80px;
-    border: 3px solid $color4;
+    border: 3px solid $third-color;
     font-size: 3em;
     
    
@@ -375,8 +351,9 @@ input {
     
 }
     .valider:hover {
-        background-color: $color4;
+        background-color: $third-color;
         color:$primary-color;
+        cursor: pointer;
         
 
     }

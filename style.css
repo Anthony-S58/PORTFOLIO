@@ -142,50 +142,46 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-animation: slide 17s linear 0s infinite normal forwards;
+          animation: slide 17s linear 0s infinite normal forwards;
 }
 
-.cadre1 {
-  height: 220px;
-  width: 500px;
-  font-size: 2em;
-  text-shadow: 3px 3px 7px #191516;
-  color: #3ed3cb;
-  background-color: #191516;
-  border-radius: 40px;
-  border: 3px solid #3ed3cb;
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(1600px);
+            transform: translateX(1600px);
+  }
+  45% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  55% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1600px);
+            transform: translateX(-1600px);
+  }
 }
 
-.cadre2 {
-  height: 220px;
-  width: 500px;
-  font-size: 2em;
-  text-shadow: 3px 3px 7px #191516;
-  color: #3ed3cb;
-  background-color: #191516;
-  border-radius: 40px;
-  border: 3px solid #3ed3cb;
-}
-
-.cadre3 {
-  height: 220px;
-  width: 500px;
-  font-size: 2em;
-  text-shadow: 3px 3px 7px #191516;
-  color: #3ed3cb;
-  background-color: #191516;
-  border-radius: 40px;
-  border: 3px solid #3ed3cb;
-}
-
-.cadre1 img, .cadre2 img, .cadre3 img {
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-  margin: 10px;
-}
-
-.skills img:hover {
-  -webkit-filter: none;
-          filter: none;
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(1600px);
+            transform: translateX(1600px);
+  }
+  45% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  55% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1600px);
+            transform: translateX(-1600px);
+  }
 }
 
 #projet h2 {
@@ -214,8 +210,8 @@ a {
 
 .projet1 {
   margin-top: -650px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,11 +220,11 @@ a {
   text-align: center;
   color: white;
   border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.308);
+  background-color: rgba(255, 255, 255, 0.075);
 }
 
 .projet2 {
-  margin: 10px;
+  margin: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,11 +233,13 @@ a {
   text-align: center;
   color: white;
   border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.308);
+  background-color: rgba(255, 255, 255, 0.075);
 }
 
 .projet3 {
-  margin: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +248,7 @@ a {
   text-align: center;
   color: white;
   border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.308);
+  background-color: rgba(255, 255, 255, 0.075);
 }
 
 .projet1 img, .projet2 img, .projet3 img {
@@ -310,6 +308,7 @@ textarea {
   font-size: 2em;
   color: rgba(179, 175, 175, 0.603);
   background-color: transparent;
+  resize: none;
 }
 
 input {
@@ -323,7 +322,7 @@ input {
 .valider {
   width: 200px;
   height: 80px;
-  border: 3px solid #3ed3cb;
+  border: 3px solid #FE9000;
   font-size: 3em;
   color: #FE9000;
   background-color: transparent;
@@ -338,8 +337,9 @@ input {
 }
 
 .valider:hover {
-  background-color: #3ed3cb;
+  background-color: #FE9000;
   color: #191516;
+  cursor: pointer;
 }
 
 .foot {
