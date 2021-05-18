@@ -185,20 +185,14 @@ a {
 }
 
 #projet h2 {
-  min-height: 100vh;
-  width: 100%;
+  font-size: 6em;
+  color: #3ed3cb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 6em;
-  text-shadow: 2px 2px 4px #FEFEFF;
-  color: #FE9000;
 }
 
 #projet {
@@ -208,70 +202,37 @@ a {
   position: relative;
 }
 
-.projet1 {
-  margin-top: -650px;
-  margin-left: 50px;
-  margin-right: 50px;
+.projets {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-align: center;
+}
+
+.projet1 {
+  margin: 50px;
+  height: 260px;
+  width: 380px;
   color: white;
-  border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.075);
 }
 
 .projet2 {
   margin: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
+  height: 260px;
+  width: 380px;
   color: white;
-  border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.075);
+}
+
+div {
+  border: 2px solid red;
 }
 
 .projet3 {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
+  margin: 50px;
+  height: 260px;
+  width: 380px;
   color: white;
-  border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.075);
-}
-
-.projet1 img, .projet2 img, .projet3 img {
-  border-radius: 40px;
-  margin-top: 5px;
-  border: 3px solid #3ed3cb;
-}
-
-h3 {
-  font-size: 4em;
-  color: #3ed3cb;
-  text-shadow: 3px 3px 7px #191516;
-  margin: 10px;
-}
-
-.projet1 p, .projet2 p, .projet3 p {
-  font-size: 3em;
-  text-shadow: 3px 3px 7px #191516;
-  margin: 25px;
-}
-
-#projet a {
-  color: #3ed3cb;
 }
 
 .parcours h2 {
