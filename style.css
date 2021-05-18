@@ -256,6 +256,7 @@ a {
 .projet1 img, .projet2 img, .projet3 img {
   border-radius: 40px;
   margin-top: 5px;
+  border: 3px solid #3ed3cb;
 }
 
 h3 {
@@ -285,6 +286,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url(/IMG/fond5.jpg);
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
@@ -298,5 +300,57 @@ h3 {
   font-size: 6em;
   text-shadow: 3px 3px 7px #191516;
   color: #FE9000;
+}
+
+textarea {
+  height: 150px;
+  width: 270px;
+  border: 3px solid #3ed3cb;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 2em;
+  color: rgba(179, 175, 175, 0.603);
+  background-color: transparent;
+}
+
+input {
+  width: 270px;
+  height: 30px;
+  border: 3px solid #3ed3cb;
+  font-size: 2em;
+  background-color: transparent;
+}
+
+.valider {
+  width: 200px;
+  height: 80px;
+  border: 3px solid #3ed3cb;
+  font-size: 3em;
+  color: #FE9000;
+  background-color: transparent;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 30px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+}
+
+.valider:hover {
+  background-color: #3ed3cb;
+  color: #191516;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(/IMG/fond3.jpg);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

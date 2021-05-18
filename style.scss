@@ -15,8 +15,11 @@ $color4: #3ed3cb;
 html {
     font-size: 10px;
     font-family: 'PT Sans Narrow', sans-serif;
+    // cursor: url(/IMG/cursor.jpg);
+
     
 }
+
 
 a {
     text-decoration: none;
@@ -91,6 +94,8 @@ a {
             #name .btn:hover {
                 background-color: $third-color;
                 color:$primary-color;
+                
+
             }
 
 #name .btn {
@@ -274,6 +279,8 @@ margin-top: 30px;
     .projet1 img, .projet2 img, .projet3 img {
         border-radius:40px;
         margin-top: 5px;
+    border: 3px solid $color4;
+
         
     }
 
@@ -316,16 +323,78 @@ margin-top: 30px;
 
 .contact {
     display: flex;
+    background-image:url(/IMG/fond5.jpg);
     justify-content: space-around;
     text-align: center;
     flex-direction: column;
 }
+
 .contact h2{
     
     font-size:6em;
     text-shadow: 3px 3px 7px $primary-color;
-    color: $third-color;
-    
-    
+    color: $third-color; 
     
 }
+
+textarea {
+    height: 150px;
+    width:270px;
+    border: 3px solid $color4;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+    color: rgba(179, 175, 175, 0.603);
+    background-color: transparent;
+
+}
+
+input {
+    width: 270px;
+    height: 30px;
+    border: 3px solid $color4;
+    font-size:2em;
+    background-color: transparent;
+    
+}
+
+.valider {
+    width: 200px;
+    height:80px;
+    border: 3px solid $color4;
+    font-size: 3em;
+    
+   
+    color:$third-color;
+    background-color: transparent;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;   
+    transition: .3s ease;  
+    transition-property: background-color, color;
+    
+}
+    .valider:hover {
+        background-color: $color4;
+        color:$primary-color;
+        
+
+    }
+
+    // Fin section contact
+
+    // Footer
+    .foot{
+        display: flex;
+
+        background-image: url(/IMG/fond3.jpg);
+        justify-content: space-around;
+        align-items: center;
+        
+
+    }
+
+
+   
+
+ 
