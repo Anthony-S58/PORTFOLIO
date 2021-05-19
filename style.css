@@ -103,6 +103,51 @@ a {
   margin-top: 30px;
 }
 
+h1 {
+  font-family: 'Inconsolata', Consolas, monospace;
+  font-size: 4em;
+  color: #d7b94c;
+}
+
+.typing {
+  position: relative;
+}
+
+.typing::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  color: white;
+  background: #1d1f20;
+  -webkit-animation: typing 4s steps(16) forwards, caret 1s infinite;
+          animation: typing 4s steps(16) forwards, caret 1s infinite;
+}
+
+@-webkit-keyframes typing {
+  to {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  to {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes caret {
+  50% {
+    color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    color: transparent;
+  }
+}
+
 #about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,8 +256,8 @@ a {
 }
 
 .flip-box {
-  width: 420px;
-  height: 260px;
+  width: 440px;
+  height: 280px;
   -webkit-perspective: 500px;
           perspective: 500px;
 }
@@ -234,12 +279,14 @@ a {
   background-image: url(/IMG/projet1.png);
   background-size: cover;
   background-position: center;
+  border: 3px solid #3ed3cb;
 }
 
 .flip-box-front2 {
   background-image: url(/IMG/projet2.png);
   background-size: cover;
   background-position: center;
+  border: 3px solid #3ed3cb;
 }
 
 .flip-box-front3 {
@@ -247,6 +294,7 @@ a {
   background-size: cover;
   background-position: center;
   position: relative;
+  border: 3px solid #3ed3cb;
 }
 
 .flip-box-back {
