@@ -210,29 +210,63 @@ a {
       justify-content: space-around;
 }
 
-.projet1 {
-  margin: 50px;
+.flip-box {
+  width: 420px;
   height: 260px;
-  width: 380px;
-  color: white;
+  -webkit-perspective: 500px;
+          perspective: 500px;
 }
 
-.projet2 {
-  margin: 50px;
-  height: 260px;
-  width: 380px;
-  color: white;
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
-div {
-  border: 2px solid red;
+.flip-box-front1 {
+  background-image: url(/IMG/projet1.png);
+  background-size: cover;
+  background-position: center;
 }
 
-.projet3 {
-  margin: 50px;
-  height: 260px;
-  width: 380px;
+.flip-box-front2 {
+  background-image: url(/IMG/projet2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.flip-box-front3 {
+  background-image: url(/IMG/projet3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.flip-box-back {
+  background-color: rgba(54, 54, 63, 0.438);
   color: white;
+  margin: 20px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-box-front1, .flip-box-front2, .flip-box-front3, .flip-box-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-box:hover .flip-box-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .parcours h2 {
@@ -262,14 +296,31 @@ div {
 }
 
 textarea {
-  height: 150px;
+  height: 270px;
   width: 270px;
   border: 3px solid #3ed3cb;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 2em;
-  color: rgba(179, 175, 175, 0.603);
   background-color: transparent;
   resize: none;
+  border-radius: 15px;
+  color: #FEFEFF;
+}
+
+::-webkit-input-placeholder {
+  color: #FEFEFF;
+}
+
+:-ms-input-placeholder {
+  color: #FEFEFF;
+}
+
+::-ms-input-placeholder {
+  color: #FEFEFF;
+}
+
+::placeholder {
+  color: #FEFEFF;
 }
 
 input {
@@ -278,11 +329,13 @@ input {
   border: 3px solid #3ed3cb;
   font-size: 2em;
   background-color: transparent;
+  border-radius: 15px;
+  color: #FEFEFF;
 }
 
 .valider {
-  width: 200px;
-  height: 80px;
+  width: 180px;
+  height: 70px;
   border: 3px solid #FE9000;
   font-size: 3em;
   color: #FE9000;
