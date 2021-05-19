@@ -242,20 +242,51 @@ margin-top: 30px;
         background-image: url(/IMG/projet2.png);
         background-size: cover;
         background-position: center;
+       
         
     }
     .flip-box-front3 {
         background-image: url(/IMG/projet3.png);
         background-size: cover;
         background-position: center;
+        position: relative;
         
     }
     .flip-box-back {
         background-color: rgba(54, 54, 63, 0.438);
         color: white;
+        font-size: 2em;
         margin: 20px;
         transform:rotateY(180deg);
     }
+
+    .flip-box-back h3{
+        font-size: 2.5em;
+        color: $color4;
+    }
+
+    .flip-box-back button{
+        border:3px solid $color4;
+        border-radius: 15px;
+        background: transparent;
+        color: white;
+        font-size: 1.2em;
+        height: 40px;
+        width: 80px;
+        cursor: pointer;
+        transition: .3s ease;  
+        transition-property: background-color, color;
+            
+        }
+            .flip-box-back button:hover {
+                background-color: $color4;
+                color:$primary-color;
+                
+
+            }
+    
+
+
 
     .flip-box-front1, .flip-box-front2, .flip-box-front3, .flip-box-back {
         backface-visibility: hidden;
