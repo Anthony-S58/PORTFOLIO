@@ -256,6 +256,7 @@ h1 {
 }
 
 .flip-box {
+  margin-top: 150px;
   width: 440px;
   height: 280px;
   -webkit-perspective: 500px;
