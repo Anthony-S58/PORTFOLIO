@@ -149,6 +149,7 @@ h1 {
 }
 
 #about {
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,6 +179,8 @@ h1 {
 }
 
 .skills {
+  min-height: 10vh;
+  margin-bottom: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,8 +196,8 @@ h1 {
 
 @-webkit-keyframes slide {
   0% {
-    -webkit-transform: translateX(1600px);
-            transform: translateX(1600px);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   45% {
     -webkit-transform: translateX(0);
@@ -205,15 +208,15 @@ h1 {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1600px);
-            transform: translateX(-1600px);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
 @keyframes slide {
   0% {
-    -webkit-transform: translateX(1600px);
-            transform: translateX(1600px);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   45% {
     -webkit-transform: translateX(0);
@@ -224,13 +227,15 @@ h1 {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1600px);
-            transform: translateX(-1600px);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
 #projet h2 {
+  margin: 20px;
   font-size: 6em;
+  text-shadow: 2px 2px 4px #FEFEFF;
   color: #3ed3cb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,6 +246,7 @@ h1 {
 }
 
 #projet {
+  min-height: 100vh;
   background-image: url(/IMG/fond3.jpg);
   background-size: cover;
   background-position: center;
@@ -343,6 +349,14 @@ h1 {
 .flip-box:hover .flip-box-inner {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.parcours {
+  min-height: 100vh;
+  background-color: #FEFEFF;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .parcours h2 {
