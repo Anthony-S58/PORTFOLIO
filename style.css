@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2? family = PT + Sans + Narrow & display = swap");
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 * {
@@ -445,7 +444,6 @@ h1 {
 .box-timeline {
   width: 100%;
   height: 2100px;
-  background: #f1f1f1;
   position: relative;
   padding: 80px 0 250px 0;
   margin-bottom: 100px;
@@ -514,7 +512,6 @@ h1 {
   padding: 20px;
   border-radius: 3px;
   height: auto;
-  background: #f1f1f1;
   -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -671,5 +668,39 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .head .button {
+    display: none;
+  }
+  #about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projets {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ligne {
+    position: relative;
+    left: 200px;
+    height: 1880px;
+  }
+  .rond {
+    left: calc(50% + 200px);
+    height: 50px;
+    width: 50px;
+  }
+  .box {
+    left: calc(50% - 50px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
