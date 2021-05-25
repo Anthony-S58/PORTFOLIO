@@ -659,10 +659,19 @@ input {
     @media screen and (max-width:1000px) {
 
         // header
+        .head {
+            height:80px;
+            justify-content: center;
+            padding-bottom:25px;
 
-        .head .button{
-            display: none;
             
+            
+        }
+        
+
+
+        .logo {
+            overflow: hidden;
         }
 
         // section  a propos
@@ -686,6 +695,18 @@ input {
             padding-bottom: 3*40px;
         }
 
+        .flip-box {
+            width:400px;
+            margin-left:10px;
+            margin-right:10px;
+
+        }
+        .flip-box-back {
+            padding:10px;
+            margin-left:10px;
+            margin-right:10px;
+        }
+
 
         // section parcours
         .ligne {
@@ -703,6 +724,7 @@ input {
     
         .box {
             left:calc(50% - 40px);
+            width:350px;
         }
     }
  

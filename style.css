@@ -674,8 +674,15 @@ input {
 }
 
 @media screen and (max-width: 1000px) {
-  .head .button {
-    display: none;
+  .head {
+    height: 80px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 25px;
+  }
+  .logo {
+    overflow: hidden;
   }
   #about {
     -webkit-box-orient: vertical;
@@ -697,6 +704,16 @@ input {
             align-items: center;
     padding-bottom: 120px;
   }
+  .flip-box {
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .flip-box-back {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .ligne {
     position: relative;
     left: 190px;
@@ -709,6 +726,7 @@ input {
   }
   .box {
     left: calc(50% - 40px);
+    width: 350px;
   }
 }
 /*# sourceMappingURL=style.css.map */
