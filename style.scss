@@ -655,6 +655,29 @@ input {
     }
 
 
+    // Formulaire PHP
+
+    .titre_php h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 3em;
+        color: black;
+    }
+    label {
+        font-size:2em;
+    }
+    .upload {
+        
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+
+    
+
+
    
     @media screen and (max-width:1000px) {
 

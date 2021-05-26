@@ -673,6 +673,33 @@ input {
   color: #FEFEFF;
 }
 
+.titre_php h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 3em;
+  color: black;
+}
+
+label {
+  font-size: 2em;
+}
+
+.upload {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (max-width: 1000px) {
   .head {
     height: 80px;
