@@ -14,6 +14,13 @@ $secondary-color: #FEFEFF;
 $third-color: #FE9000;
 $color4: #3ed3cb;
 
+%flip {
+    background-size: cover;
+    background-position: center;
+    border: 3px solid $color4;
+   
+}
+
 
 * {
     padding: 0;
@@ -351,32 +358,34 @@ h1 {
         text-align: center;
         transition: transform 0.8s;
         transform-style: preserve-3d;
+        
     }
-
+    
     .flip-box-front1 {
         background-image: url(IMG/projet1.png);
-        background-size: cover;
-        background-position: center;
-        border: 3px solid $color4;
+       
+        @extend %flip;
 
         
     }
     .flip-box-front2 {
         background-image: url(IMG/projet2.png);
-        background-size: cover;
-        background-position: center;
-        border: 3px solid $color4;
+        @extend %flip;
+
 
        
         
     }
     .flip-box-front3 {
         background-image: url(IMG/projet3.png);
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        border: 3px solid $color4;
-        
+        @extend %flip;
+
+    }
+
+    .flip-box-front {
+
+
+        @extend %flip;
     }
     .flip-box-back {
         background-color: rgba(54, 54, 63, 0.438);
@@ -414,7 +423,7 @@ h1 {
 
 
 
-    .flip-box-front1, .flip-box-front2, .flip-box-front3, .flip-box-back {
+    .flip-box-front, .flip-box-front1, .flip-box-front2, .flip-box-front3, .flip-box-back {
         backface-visibility: hidden;
         position: absolute;
         width: 100%;

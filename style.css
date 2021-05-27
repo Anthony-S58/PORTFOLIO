@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+.flip-box-front1, .flip-box-front2, .flip-box-front3, .flip-box-front {
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #3ed3cb;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -354,24 +360,14 @@ h1 {
 
 .flip-box-front1 {
   background-image: url(IMG/projet1.png);
-  background-size: cover;
-  background-position: center;
-  border: 3px solid #3ed3cb;
 }
 
 .flip-box-front2 {
   background-image: url(IMG/projet2.png);
-  background-size: cover;
-  background-position: center;
-  border: 3px solid #3ed3cb;
 }
 
 .flip-box-front3 {
   background-image: url(IMG/projet3.png);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border: 3px solid #3ed3cb;
 }
 
 .flip-box-back {
@@ -408,7 +404,7 @@ h1 {
   color: #191516;
 }
 
-.flip-box-front1, .flip-box-front2, .flip-box-front3, .flip-box-back {
+.flip-box-front, .flip-box-front1, .flip-box-front2, .flip-box-front3, .flip-box-back {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;

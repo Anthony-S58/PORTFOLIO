@@ -52,6 +52,8 @@
         <footer>
 
             <a href="formulaire.php"><h2>Accéder au formulaire</h2></a>
+            <a href="projet.php"><h2>Accéder aux projets</h2></a>
+
 
             <br>
 
