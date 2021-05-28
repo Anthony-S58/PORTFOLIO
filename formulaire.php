@@ -62,5 +62,7 @@
 
             </form> 
 
+            <a href="projet.php">Accéder aux projets</a>
+
 </body>
 </html>

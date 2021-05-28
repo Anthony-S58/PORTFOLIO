@@ -56,8 +56,8 @@ while ($donnees = $reponse ->fetch()) {
                         </div>
                         <br>
                         
-                        <a href="modif.php"><button>Modifier</button></a>
-                    <a href="delete.php"><button>Supprimer</button></a>
+                        <button onclick="return confirm('voulez-vous modifier?')"><a href="modif.php?ID=<?php echo $donnees['ID']?>">Modifier</a></button>
+                    <button onclick="return confirm('voulez-vous supprimer?')"><a href="delete.php?ID=<?php echo $donnees['ID']?>">Supprimer</a></button>
                     </div>
                     
 

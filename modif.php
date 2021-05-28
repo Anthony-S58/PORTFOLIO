@@ -18,3 +18,11 @@
 include('database.php');
 
 ?>
+
+<?php
+
+    $getid=$_GET['ID'];
+
+    
+
+?>

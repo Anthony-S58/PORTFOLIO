@@ -17,6 +17,11 @@
 
 include('database.php');
 
+echo ("<script LANGUAGE='JavaScript'>
+    window.alert('Projet supprimé');
+    window.location.href='projet.php';
+    </script>");
+
 ?>
 
 
@@ -24,6 +29,6 @@ include('database.php');
 
     $getid=$_GET['ID'];
 
-    $bdd->exec("DELETE from uploadprojet WHERE ID='$getid'");
+    $bdd->exec ("DELETE FROM uploadprojet WHERE ID='$getid'");
 
 ?>
