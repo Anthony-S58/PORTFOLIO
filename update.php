@@ -9,10 +9,8 @@ echo ("<script LANGUAGE='JavaScript'>
 
 ?>
 
+
 <?php
-
-
-
 
 $getid=$_GET['ID'];
 $nom = $_POST['Nom'];

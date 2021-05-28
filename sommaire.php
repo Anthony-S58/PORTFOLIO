@@ -16,7 +16,6 @@
             <!-- HEADER -->
         <?php
 
-
             $name=$_POST['user'];
             $password=$_POST['password'];
 
@@ -37,6 +36,7 @@
        
 
             <?php
+
                 if($name=='Anthony' && $password=='Admin') {
                 ('location:formulaire.php');
                 echo '<span class="welcome">Bienvenue '. $name. ' !</span>';
@@ -54,10 +54,7 @@
             <a href="formulaire.php"><h2>Accéder au formulaire</h2></a>
             <a href="projet.php"><h2>Accéder aux projets</h2></a>
 
-
             <br>
-
-            
             
         </footer>
 
