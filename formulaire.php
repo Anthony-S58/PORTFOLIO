@@ -66,8 +66,9 @@
         <button name="submit" type="submit" value="Valider">Valider</button>
 
     </form> 
-
+    <div class="retour">
         <a href="projet.php">Accéder aux projets</a>
+    </div>
 
 </body>
 

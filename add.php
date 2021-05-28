@@ -5,7 +5,7 @@
  include('database.php');
 
   echo ("<script LANGUAGE='JavaScript'>
-    window.alert('Ajout effectué avvec succès !');
+    window.alert('Ajout effectué avec succès !');
     window.location.href='formulaire.php';
     </script>");
     

@@ -8,10 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-        <title>Accueil - Tête d'ampoule</title>
+        <title>Sommaire</title>
     </head>
 
-    <body>
+    <body class="sommaire">
 
             <!-- HEADER -->
         <?php
@@ -22,7 +22,7 @@
         ?>
 
 
-        <div class="titre">
+        <div class="sommaire_titre">
                
              <h1>Gestionnaire des projets</h1>
 
@@ -32,7 +32,7 @@
 
             <!-- Section -->
 
-        <section>
+        <section class="bienvenue">
        
 
             <?php
@@ -49,14 +49,14 @@
 
         <br><br><br><br><br><br><br><br>
 
-        <footer>
+        <section class="sommaire_button">
 
-            <a href="formulaire.php"><h2>Accéder au formulaire</h2></a>
-            <a href="projet.php"><h2>Accéder aux projets</h2></a>
+            <button><a href="formulaire.php"><h2>Ajouter un projet</h2></a></button>
+            <button><a href="projet.php"><h2>Accéder aux projets</h2></a></button>
 
             <br>
             
-        </footer>
+        </section>
 
     </body>
 

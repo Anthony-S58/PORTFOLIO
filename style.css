@@ -632,6 +632,14 @@ input {
   color: #FEFEFF;
 }
 
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
 .valider {
   width: 180px;
   height: 70px;
@@ -669,6 +677,89 @@ input {
   color: #FEFEFF;
 }
 
+.admin_space h1 {
+  width: auto;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 6em;
+  color: #191516;
+}
+
+.connect {
+  padding: 80px;
+  margin: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.connexion input {
+  height: 50px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sommaire {
+  background-color: grey;
+}
+
+.sommaire_titre h1 {
+  width: auto;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 6em;
+  color: #191516;
+}
+
+section .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 6em;
+  text-shadow: 3px 3px 7px #191516;
+  color: #FE9000;
+}
+
+.sommaire_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.sommaire_button button {
+  height: 50px;
+  width: 150px;
+}
+
 .titre_php h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -677,8 +768,9 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-size: 3em;
+  font-size: 6em;
   color: black;
+  margin: 80px;
 }
 
 label {
@@ -694,6 +786,17 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.upload input {
+  border: ridge;
+  background: none;
+  border-radius: none;
+}
+
+.upload button {
+  height: 50px;
+  width: 100px;
 }
 
 .titre_modif h1 {
@@ -724,6 +827,19 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.retour a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 100px;
+  font-size: 3em;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1000px) {

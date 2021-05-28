@@ -35,7 +35,7 @@
 
         <!-- Section -->
 
-        <section>
+        <section class="connect">
 
             <div class="connexion">
 
@@ -43,10 +43,12 @@
 
                     <label>Nom d'utilisateur :</label>
                     <input type="text" name="user" required>
-
+                    <br><br><br>
                     <label>Mot de passe :</label> 
                     <input type="password" name="password" required>
 
+                    <br><br>
+                    <br><br>
                     <br><br>
 
                     <input class="user" type="submit" value="Connexion">
