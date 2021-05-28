@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="Fr">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,46 +13,51 @@
 
     <body>
 
-                <!-- Récupération message d'erreur si mauvais identifiants -->
+        <!-- Récupération message d'erreur si mauvais identifiants -->
 
-            <?php
+        <?php
             if(!empty($_GET['message'])) {
-            $message = $_GET['message'];
-            $message = 'Nom d\'utilisateur ou Mot de passe invalide';
-             echo $message;}
-            ?>
+                $message = $_GET['message'];
+                $message = 'Nom d\'utilisateur ou Mot de passe invalide';
+                echo $message;
+            }
+        ?>
 
-            <!-- HEADER -->
+        <!-- HTML -->
 
-            <div class="titre">
+        <div class="admin_space">
                
-             <h1>Espace administrateur</h1>
+            <h1>Espace Administrateur</h1>
+
+        </div>
+
+        <br>
+
+        <!-- Section -->
+
+        <section>
+
+            <div class="connexion">
+
+                <form action="sommaire.php" method="Post">
+
+                    <label>Nom d'utilisateur :</label>
+                    <input type="text" name="user" required>
+
+                    <label>Mot de passe :</label> 
+                    <input type="password" name="password" required>
+
+                    <br><br>
+
+                    <input class="user" type="submit" value="Connexion">
+
+                </form>
+
 
             </div>
 
-            <br>
+        </section>
 
-            <!-- Section -->
-
-                    <section>
-
-                        <div class="connexion">
-
-                            <form action="sommaire.php" method="Post">
-
-                            <label>Nom d'utilisateur :</label>
-                            <input type="text" name="user" required>
-
-                            <label>Mot de passe :</label> 
-                            <input type="password" name="password" required>
-
-            <br><br>
-
-                            <input class="user" type="submit" value="Connexion">
-
-
-                        </div>
-                    </section>
     </body>
 
 </html>

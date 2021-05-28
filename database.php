@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-        <title>Cours PHP / MySQL</title>
+        <title>Base de données</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="cours.css">
+        <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
         <!-- <h1>Bases de données MySQL</h1>   -->
         <?php
@@ -26,7 +28,8 @@
               echo "Erreur : " . $e->getMessage();
             }
 
-            
         ?>
+
     </body>
+    
 </html>

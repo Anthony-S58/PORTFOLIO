@@ -682,7 +682,23 @@ input {
         justify-content: center;
         flex-direction: column;
     }
-    
+
+    .titre_modif h1{
+        margin:100px;
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+    }
+    .modif_projet {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    .titre_modif h2{
+        justify-content: center;
+    }
 
     
 
