@@ -342,6 +342,9 @@ h1 {
     .projets {
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        flex-wrap:nowrap;
+        
     }
 
     .flip-box {
@@ -798,7 +801,12 @@ textarea:focus {
 
     height:50px;
     width:100px;
+    
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
     }
+      // PROJET PHP
 
     .titre_modif h1{
         margin:100px;
@@ -826,7 +834,7 @@ textarea:focus {
         text-decoration: underline;
     }
 
-    // PROJET PHP
+  
 
     .gestprojet {
         background:grey;
@@ -858,20 +866,31 @@ textarea:focus {
   .mod {
         background: rgba(255, 166, 0, 0.699);
         border:none;
-        border-radius: 10px;
-       
-        
+        border-radius: 10px; 
     }
+
+        .mod:hover {
+        background: rgba(255, 166, 0, 0.904);
+
+        }
+
     .sup {
         background: rgba(255, 0, 0, 0.658);
         border: none;
         border-radius: 10px;
-
     }
+
+        .sup:hover {
+            background: rgba(255, 0, 0, 0.904);
+        }
 
     .mod a, .sup a {
         color:white;
     }
+
+//  div {
+//         border: 1px solid red;
+//     }
    
     @media screen and (max-width:1000px) {
 

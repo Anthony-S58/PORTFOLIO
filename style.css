@@ -335,6 +335,11 @@ h1 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .flip-box {
@@ -819,6 +824,9 @@ label {
 .upload button {
   height: 50px;
   width: 100px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .titre_modif h1 {
@@ -899,10 +907,18 @@ label {
   border-radius: 10px;
 }
 
+.mod:hover {
+  background: rgba(255, 166, 0, 0.904);
+}
+
 .sup {
   background: rgba(255, 0, 0, 0.658);
   border: none;
   border-radius: 10px;
+}
+
+.sup:hover {
+  background: rgba(255, 0, 0, 0.904);
 }
 
 .mod a, .sup a {

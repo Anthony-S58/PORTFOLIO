@@ -109,11 +109,44 @@
       <br />
       <h2>Mes Projets</h2>
       <br /><br /><br /><br />
-      <div class="projets">
+
+      <?php
+      include('database.php');
+      ?>
+
+      <?php
+      $reponse = $bdd->query("SELECT * FROM uploadprojet WHERE Masquer = 'non'");
+      ?>
+
+
+      <?php
+
+            while ($donnees = $reponse ->fetch()) {
+
+        ?>
+
+            <div class="projets">
+                                
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front" style="background-image:url(IMG/<?php echo $donnees['Image']?>)"> </div>         
+                            <div class="flip-box-back">
+                                <h3><?php echo $donnees['Nom'].'</h3><br>'?><br>
+                                <p><?php echo $donnees['Description']?></p><br>
+                                <a href="<?php echo $donnees['Lien']?>" target="_blank"><button>Visiter</button></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        <?php
+        }
+        ?>
+      <!-- <div class="projets">
         <div class="flip-box">
           <div class="flip-box-inner">
             <div class="flip-box-front1">
-              <!-- <h2>Projet1</h2> -->
             </div>
             <div class="flip-box-back">
               <h3>Reproduire une maquette</h3>
@@ -134,7 +167,6 @@
         <div class="flip-box">
           <div class="flip-box-inner">
             <div class="flip-box-front2">
-              <!-- <h2>Projet2</h2> -->
             </div>
             <div class="flip-box-back">
               <h3>Promouvoir un département</h3>
@@ -155,7 +187,6 @@
         <div class="flip-box">
           <div class="flip-box-inner">
             <div class="flip-box-front3">
-              <!-- <h2>Projet3</h2> -->
             </div>
             <div class="flip-box-back">
               <h3>Projet ampoule</h3>
@@ -173,7 +204,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- FIN SECTION PROJETS -->

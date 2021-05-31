@@ -1,3 +1,12 @@
+<!-- Avant tout on démarre la session -->
+
+<?php
+    session_start(); 
+    if (!isset ($_SESSION['acces']))
+    header('location:admin.php');
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="Fr">
@@ -14,14 +23,7 @@
     <body class="sommaire">
 
             <!-- HEADER -->
-        <?php
-
-            $name=$_POST['user'];
-            $password=$_POST['password'];
-
-        ?>
-
-
+        
         <div class="sommaire_titre">
                
              <h1>Gestionnaire des projets</h1>
@@ -35,15 +37,10 @@
         <section class="bienvenue">
        
 
-            <?php
+            
+           <span class="welcome">Bienvenue Anthony !</span>
 
-                if($name=='Anthony' && $password=='Admin') {
-                ('location:formulaire.php');
-                echo '<span class="welcome">Bienvenue '. $name. ' !</span>';
-
-                }else header("location:index.php?message=error");
-
-            ?>
+          
 
         </section>
 
@@ -59,7 +56,7 @@
         </section>
 
         <div class="logout">
-            <a href="index.html"><img src="IMG/logout.png"></a>
+            <a href="logout.php"><img src="IMG/logout.png"></a>
 
             </div>
 

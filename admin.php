@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-        <title>Accueil - Tête d'ampoule</title>
+        <title>Espace Admin</title>
     </head>
 
     <body class="admin">
@@ -18,10 +18,11 @@
         <?php
             if(!empty($_GET['message'])) {
                 $message = $_GET['message'];
-                $message = 'Nom d\'utilisateur ou Mot de passe invalide';
+                $message = '!!! Nom d\'utilisateur ou Mot de passe invalide !!!';
                 echo $message;
             }
         ?>
+
 
         <!-- HTML -->
 
@@ -32,6 +33,7 @@
             <h1>Espace Administrateur</h1>
 
         </div>
+        
 
         <br>
 
@@ -41,9 +43,9 @@
 
             <div class="connexion">
 
-                <form action="sommaire.php" method="Post">
+                <form action="connect.php" method="POST">
 
-                    <label>Nom d'utilisateur :</label>
+                    <label>Pseudo :</label>
                     <input type="text" name="user" required>
                     <br><br><br>
                     <label>Mot de passe :</label> 
@@ -62,6 +64,7 @@
 
         </section>
 
+        
     </body>
 
 </html>

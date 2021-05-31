@@ -1,3 +1,11 @@
+<?php
+    session_start(); 
+    if (!isset ($_SESSION['acces']))
+    header('location:admin.php');
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 

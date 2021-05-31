@@ -1,3 +1,13 @@
+<!-- Avant tout on démarre la session -->
+
+<?php
+    session_start(); 
+    if (!isset ($_SESSION['acces']))
+    header('location:admin.php');
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="Fr">
 
@@ -56,7 +66,9 @@
     
     <div class="retour">
         <a href="projet.php">Accéder aux projets</a>
+
     </div>
+
 
 </body>
 
