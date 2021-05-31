@@ -340,10 +340,12 @@ h1 {
         
     }
     .projets {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap:nowrap;
+        display: inline-flex;
+        margin:40px;
+        margin-top: 0px;
+        // justify-content: space-around;
+        // align-items: center;
+        // flex-direction: row;
         
     }
 

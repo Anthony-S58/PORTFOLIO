@@ -129,7 +129,7 @@
                                 
                 <div class="flip-box">
                     <div class="flip-box-inner">
-                        <div class="flip-box-front" style="background-image:url(IMG/<?php echo $donnees['Image']?>)"> </div>         
+                        <div class="flip-box-front" style="background-image:url(IMG/<?php echo $donnees['Image']?>)"></div>         
                             <div class="flip-box-back">
                                 <h3><?php echo $donnees['Nom'].'</h3><br>'?><br>
                                 <p><?php echo $donnees['Description']?></p><br>
@@ -205,13 +205,14 @@
           </div>
         </div>
       </div> -->
+      <br><br>
     </section>
 
     <!-- FIN SECTION PROJETS -->
 
     <!-- MON PARCOURS -->
 
-    <br /><br /><br />
+    <br /><br />
 
     <section id="parcours">
       <div class="parcours">
