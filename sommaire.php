@@ -58,6 +58,11 @@
             
         </section>
 
+        <div class="logout">
+            <a href="index.html"><img src="IMG/logout.png"></a>
+
+            </div>
+
     </body>
 
 </html>

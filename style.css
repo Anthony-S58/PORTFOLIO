@@ -677,6 +677,25 @@ textarea:focus {
   color: #FEFEFF;
 }
 
+.logout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.logout img {
+  height: 100px;
+  width: 80px;
+}
+
+.admin {
+  background: rgba(128, 128, 128, 0.733);
+}
+
 .admin_space h1 {
   width: auto;
   margin: 50px;
@@ -753,11 +772,14 @@ section .welcome {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px;
+  gap: 50px;
 }
 
 .sommaire_button button {
   height: 50px;
   width: 150px;
+  border: none;
+  border-radius: 10px;
 }
 
 .titre_php h1 {
@@ -789,9 +811,9 @@ label {
 }
 
 .upload input {
-  border: ridge;
-  background: none;
-  border-radius: none;
+  border: none;
+  border-bottom: 1px black solid;
+  padding: 5px;
 }
 
 .upload button {
@@ -840,6 +862,51 @@ label {
   margin: 100px;
   font-size: 3em;
   text-decoration: underline;
+}
+
+.gestprojet {
+  background: grey;
+}
+
+.titre_modif h1 {
+  color: black;
+}
+
+.titre_modif {
+  font-size: 3em;
+}
+
+.btnmodif {
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.btnmodif button {
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+}
+
+.mod {
+  background: rgba(255, 166, 0, 0.699);
+  border: none;
+  border-radius: 10px;
+}
+
+.sup {
+  background: rgba(255, 0, 0, 0.658);
+  border: none;
+  border-radius: 10px;
+}
+
+.mod a, .sup a {
+  color: white;
 }
 
 @media screen and (max-width: 1000px) {

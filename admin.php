@@ -11,7 +11,7 @@
         <title>Accueil - Tête d'ampoule</title>
     </head>
 
-    <body>
+    <body class="admin">
 
         <!-- Récupération message d'erreur si mauvais identifiants -->
 
@@ -24,6 +24,8 @@
         ?>
 
         <!-- HTML -->
+
+        
 
         <div class="admin_space">
                

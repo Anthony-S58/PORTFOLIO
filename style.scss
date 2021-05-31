@@ -670,9 +670,28 @@ textarea:focus {
 
     }
 
+
+    // PHP
+
+    .logout {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+
+    }
+
+    .logout img{
+        
+        height: 100px;
+        width:80px;
+        
+    }
+
 // ADMIN PHP
 
-
+.admin {
+    background:rgba(128, 128, 128, 0.733);
+}
     .admin_space h1{
         width:auto;
         margin:50px;
@@ -730,13 +749,20 @@ textarea:focus {
         justify-content: center;
         align-items: center;
         margin:10px;
+        gap: 50px;
+        
+
         
     }
 
     .sommaire_button button{
         height:50px;
         width: 150px;
+        border: none;
+        border-radius:10px;
     }
+
+    
 
     // Formulaire PHP
 
@@ -762,10 +788,9 @@ textarea:focus {
 
 
     .upload input {
-        border:ridge;
-        
-        background: none;
-        border-radius: none;
+        border:none;
+        border-bottom: 1px black solid;  
+        padding: 5px;   
         
     }
 
@@ -801,7 +826,52 @@ textarea:focus {
         text-decoration: underline;
     }
 
+    // PROJET PHP
 
+    .gestprojet {
+        background:grey;
+    }
+    .titre_modif h1{
+        color: black;
+    }
+
+    .titre_modif {
+        font-size: 3em;     
+    }
+
+    .btnmodif {
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .btnmodif button {
+        height:50px;
+        width:150px;
+        font-size: 20px;
+        
+       
+
+    }
+
+  .mod {
+        background: rgba(255, 166, 0, 0.699);
+        border:none;
+        border-radius: 10px;
+       
+        
+    }
+    .sup {
+        background: rgba(255, 0, 0, 0.658);
+        border: none;
+        border-radius: 10px;
+
+    }
+
+    .mod a, .sup a {
+        color:white;
+    }
    
     @media screen and (max-width:1000px) {
 
@@ -809,9 +879,7 @@ textarea:focus {
         .head {
             height:80px;
             justify-content: center;
-            padding-bottom:25px;
-
-            
+            padding-bottom:25px;     
             
         }
         

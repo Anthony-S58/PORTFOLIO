@@ -28,27 +28,19 @@
 
         <label>Nom du projet :</label>
             <input type="text" name="Nom">
-                <br>
-                <br>
-                <br>
+                <br><br><br>
 
         <label>Description :</label>
             <input type="text" name="Description">
-                <br>
-                <br>
-                <br>
+                <br><br><br>
 
         <label>Lien du site :</label>
             <input type="text" name="Lien">
-                <br>
-                <br>
-                <br>
+                <br><br><br>
 
         <label>Insérer l'image :</label>
             <input type="file" name="Image">
-                <br>
-                <br>
-                <br>
+                <br><br><br>
 
         <div>
             <label>Masquer :</label>
@@ -56,16 +48,12 @@
             <label><input name="Masquer" type="radio" value="non">non</label>
         </div>
 
-
-                <br>
-                <br>
-                <br>
-                
-                
-                
+                <br><br><br>
+                     
         <button name="submit" type="submit" value="Valider">Valider</button>
 
     </form> 
+    
     <div class="retour">
         <a href="projet.php">Accéder aux projets</a>
     </div>
