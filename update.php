@@ -17,12 +17,12 @@ $nom = $_POST['Nom'];
 $description = $_POST['Description'];
 $lien = $_POST['Lien'];
 $image = $_POST['Image'];
-$masquer = $_POST['Masquer'];
+$afficher = $_POST['Afficher'];
 
 
 $bdd->exec
 ("UPDATE uploadprojet SET
- Nom='$nom', Description='$description', Lien='$lien', Image='$image', Masquer='$masquer'
+ Nom='$nom', Description='$description', Lien='$lien', Image='$image', Afficher='$afficher'
 WHERE ID=$getid");
 
 ?>

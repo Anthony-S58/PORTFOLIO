@@ -47,7 +47,7 @@ html {
     z-index: 2;
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 .head button {
@@ -72,7 +72,8 @@ html {
     
 }
 
-.logo {
+.head .logo {
+    margin-left:10px;
     font-size: 3em;
     color: $secondary-color;
     
@@ -771,7 +772,9 @@ textarea:focus {
 
     // Formulaire PHP
 
-    
+    .form_php {
+        background: grey;
+    }
 
     .titre_php h1{
         display: flex;
@@ -793,8 +796,8 @@ textarea:focus {
 
 
     .upload input {
-        border:none;
-        border-bottom: 1px black solid;  
+        border:1px solid $color4;
+       
         padding: 5px;   
         
     }
@@ -803,7 +806,8 @@ textarea:focus {
 
     height:50px;
     width:100px;
-    
+    font-size: 20px;
+    background-color: chartreuse;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -865,6 +869,7 @@ textarea:focus {
 
     }
 
+
   .mod {
         background: rgba(255, 166, 0, 0.699);
         border:none;
@@ -888,6 +893,23 @@ textarea:focus {
 
     .mod a, .sup a {
         color:white;
+    }
+
+    // PHP MODIF
+
+    .php_modif h1{
+        color:black;
+        font-size: 5em;
+    }
+    .php_modif {
+        background:grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulaire_modif .return {
+        background:rgb(177, 167, 167);
     }
 
 //  div {

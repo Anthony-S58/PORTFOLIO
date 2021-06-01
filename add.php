@@ -18,7 +18,7 @@ $nom = $_POST['Nom'];
 $description = $_POST['Description'];
 $lien = $_POST['Lien'];
 $image = $_POST['Image'];
-$masquer = $_POST['Masquer'];
+$afficher = $_POST['Afficher'];
 
 
 $bdd->exec

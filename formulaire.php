@@ -19,7 +19,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="form_php">
 
     <?php
 
@@ -36,25 +36,25 @@
 
     <form class="upload"action="add.php" method="POST">
 
-        <label>Nom du projet :</label>
-            <input type="text" name="Nom" required>
+        
+            <input type="text" name="Nom" placeholder="Nom du projet"required>
                 <br><br><br>
 
-        <label>Description :</label>
-            <input type="text" name="Description" required>
+        
+            <input type="text" name="Description" placeholder="Description" required>
                 <br><br><br>
 
-        <label>Lien du site :</label>
-            <input type="text" name="Lien" required>
+       
+            <input type="text" name="Lien" placeholder="Lien du site" required>
                 <br><br><br>
 
-        <label>Insérer l'image :</label>
+       
             <input type="file" name="Image" required>
                 <br><br><br>
 
         <div>
-            <label>Masquer :</label>
-            <label><input name="Masquer" type="radio" value="oui">oui</label><br><br>
+            <label>Afficher :</label>
+            <label><input name="Masquer" type="radio" checked value="oui">oui</label>
             <label><input name="Masquer" type="radio" value="non">non</label>
         </div>
 

@@ -28,8 +28,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -54,7 +55,8 @@ html {
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.logo {
+.head .logo {
+  margin-left: 10px;
   font-size: 3em;
   color: #FEFEFF;
 }
@@ -782,6 +784,10 @@ section .welcome {
   border-radius: 10px;
 }
 
+.form_php {
+  background: grey;
+}
+
 .titre_php h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -811,14 +817,15 @@ label {
 }
 
 .upload input {
-  border: none;
-  border-bottom: 1px black solid;
+  border: 1px solid #3ed3cb;
   padding: 5px;
 }
 
 .upload button {
   height: 50px;
   width: 100px;
+  font-size: 20px;
+  background-color: chartreuse;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -918,6 +925,29 @@ label {
 
 .mod a, .sup a {
   color: white;
+}
+
+.php_modif h1 {
+  color: black;
+  font-size: 5em;
+}
+
+.php_modif {
+  background: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulaire_modif .return {
+  background: #b1a7a7;
 }
 
 @media screen and (max-width: 1000px) {

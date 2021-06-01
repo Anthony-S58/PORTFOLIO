@@ -62,7 +62,7 @@
                             <br><br>
 
                             <div class="btnmodif">   
-                                <button class="mod" onclick="return confirm('voulez-vous modifier?')"><a href="modif.php?ID=<?php echo $donnees['ID']?>&Nom=<?php echo $donnees['Nom']?>&Description=<?php echo $donnees['Description']?>&Lien=<?php echo $donnees['Lien']?>&Image=<?php echo $donnees['Image']?>&Masquer=<?php echo $donnees['Masquer']?>">Modifier</a></button>
+                                <button class="mod" onclick="return confirm('voulez-vous modifier?')"><a href="modif.php?ID=<?php echo $donnees['ID']?>&Nom=<?php echo $donnees['Nom']?>&Description=<?php echo $donnees['Description']?>&Lien=<?php echo $donnees['Lien']?>&Image=<?php echo $donnees['Image']?>&Masquer=<?php echo $donnees['Afficher']?>">Modifier</a></button>
                                 <button class="sup" onclick="return confirm('voulez-vous supprimer?')"><a href="delete.php?ID=<?php echo $donnees['ID']?>">Supprimer</a></button>
                             </div>    
                 </div>

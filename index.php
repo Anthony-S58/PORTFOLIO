@@ -13,10 +13,10 @@
     <header id="header">
       <div class="head">
         <div class="logo"><span>A</span>nthony <span>S</span>IMONNEAU</div>
-        <button><a href="#about">A Propos</a></button>
+        <!-- <button><a href="#about">A Propos</a></button>
         <button><a href="#projet">Mes Projets</a></button>
         <button><a href="#parcours">Mon Parcours</a></button>
-        <button><a href="#contact">Contact</a></button>
+        <button><a href="#contact">Contact</a></button> -->
       </div>
     </header>
 
@@ -115,7 +115,7 @@
       ?>
 
       <?php
-      $reponse = $bdd->query("SELECT * FROM uploadprojet WHERE Masquer = 'non'");
+      $reponse = $bdd->query("SELECT * FROM uploadprojet WHERE Afficher = 'oui'");
       ?>
 
 
