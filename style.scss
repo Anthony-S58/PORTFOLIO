@@ -38,67 +38,191 @@ html {
     
 }
 
-// header
+// Menu nav hamburger
 
-.head {
-    width: 100%;
-    height:50px;
-    background: rgba(0, 0, 0, 0.582);
-    z-index: 2;
+#header {
     position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+
+}
+
+#header .header {
+    min-height: 8vh;
+    background-color: rgba(0, 0, 0, 0.580);
+
+}
+
+#header .nav-bar {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-}
-.head button {
-    padding:10px;
-    height:50px;
-    background: transparent;
-    border: none;
-
-}
-.head button:hover {
-    background:black;
-    
-}
-
-.head a {
-   
-    text-decoration: none;
-    text-align: center;
-    color: $color4;
-    font-size: 2em;
-    font-family: 'PT Sans Narrow', sans-serif;
-    
-}
-
-.head .logo {
-    margin-left:10px;
-    font-size: 3em;
-    color: $secondary-color;
-    
-    
-}
-span {
-    color:$third-color;
-    font-family: 'Pattaya', sans-serif;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-.container {
-    min-height: 100vh;
+    justify-content: space-between;
     width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+
+#header .nav-list ul {
+    list-style : none;
+    position : absolute;
+    background-color : rgb(0, 0, 0);
+    width : 100vw;
+    height : 100vh;
+    top : 0;
+    left : 0;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    z-index : 1;
+    overflow-x : hidden;
+    flex-direction : column;
+}
+
+#header .nav-list ul a {
+    font-size: 2.5rem;
+    font-weight : 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color:$color4;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+
+#header .nav-list ul a::after {
+    content: attr(data-after);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgba(240, 248, 255, 0.089);
+    font-size: 8rem;
+    letter-spacing: 50px;
+    z-index: -1;
+    transition: .3s ease letter-spacing;
+
+
+}
+
+#header .nav-list ul li:hover a::after{
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+
+
+}
+
+#header .hamburger {
+    height: 60px;
+    width: 60px;
+    z-index: 100;
+    display: inline-block;
+    border: 3px solid $color4;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    border-radius:50%;
+    position:relative;
+    cursor: pointer;
+
 }
 
-// section nom et prenom
+#header .hamburger .bar {
+    height: 4px;
+    width: 30px;
+    position: relative;
+    background-color: $color4;
+    transition: .3s ease;
+    z-index: -1;
+    border-radius: 5px;
+
+}
+
+#header .hamburger .bar::after, 
+#header .hamburger .bar::before {
+
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: $color4;
+    transition: .3s ease;
+    transition-property: top, bottom ;
+    border-radius: 5px;
+
+}
+
+#header .hamburger .bar::after {
+    top:8px;
+
+}
+
+#header .hamburger .bar::before {
+    bottom:8px;
+}
+// animation burger
+// #header .hamburger.open .bar {
+//     transform: translateX(-50px);
+//     background: transparent;
+
+// }
+
+#header .hamburger.open .bar::before {
+    // transform: rotate(45deg)translate(42.5px, -29.5px);
+    bottom: 0;
+
+}
+
+#header .hamburger.open .bar::after {
+    // transform: rotate(-45deg)translate(39.5px, 30.5px);
+    top: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #header .hamburger {
+//     position: relative;
+//     display: flex;
+//     display: inline-block;
+//     justify-content: center;
+//     align-items: center;
+//     width: 60px;
+//     height: 60px;
+//     cursor: pointer;
+//     transition: all .5s ease-in-out;
+//     border : 3px solid $color4;
+//     z-index: 100;
+//     border-radius: 50%;
+// }
+
+// #header .bar {
+//     width: 30px;
+//     height:2px;
+//     background-color: $color4;
+//     border-radius: 5px;
+//     transition: all .5s ease-in-out;  
+//     position: relative;
+//     z-index: -1;
+
+// }
+
+
+// Fin menu burger
 
 #name {
     padding-top:80px;

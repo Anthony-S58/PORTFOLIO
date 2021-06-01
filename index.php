@@ -10,15 +10,41 @@
 
   <body>
     <!-- HEADER -->
-    <header id="header">
+    <!-- <header id="header">
       <div class="head">
         <div class="logo"><span>A</span>nthony <span>S</span>IMONNEAU</div>
-        <!-- <button><a href="#about">A Propos</a></button>
-        <button><a href="#projet">Mes Projets</a></button>
-        <button><a href="#parcours">Mon Parcours</a></button>
-        <button><a href="#contact">Contact</a></button> -->
+          <div id="burger">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            <input type="checkbox" id="burger_checkbox"/>
+            <ul>
+              <li><a href="#about">A Propos</a></li>
+              <li><a href="#projet">Mes Projets</a></li>
+              <li><a href="#parcours">Mon Parcours</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>  
       </div>
-    </header>
+    </header> -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+              <a href="#name"><h1><span>A</span>nthony <span>S</span>imonneau</h1></a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger"><div class="bar"></div></div>
+              <ul>
+                <li><a href="#about" data-after="A Propos">A Propos</a></li>
+                <li><a href="#projet" data-after="Projets">Mes Projets</a></li>
+                <li><a href="#parcours" data-after="Parcours">Mon Parcours</a></li>
+                <li><a href="#contact" data-after="Contact">Contact</a></li>
+
+              </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
     <!-- SECTION NOM ET PRENOM -->
 
@@ -370,7 +396,7 @@
       <p>Copyright &copy; 2021 Anthony SIMONNEAU. All Rights Reserved</p>
     </div>
 
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js"
       integrity="sha512-UgS0SVyy/0fZ0i48Rr7gKpnP+Jio3oC7M4XaKP3BJUB/guN6Zr4BjU0Hsle0ey2HJvPLHE5YQCXTDrx27Lhe7A=="
       crossorigin="anonymous"
@@ -389,7 +415,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> -->
     <script src="main.js"></script>
   </body>
 
