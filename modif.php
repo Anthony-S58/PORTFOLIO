@@ -54,22 +54,22 @@
             <form class="upload" method="POST" action="update.php?ID=<?php echo $getid?>">
 
                 <label>Nom du projet :</label>
-                <input type="text" name="Nom" value="<?php echo $getnom?>">
+                <input type="text" name="Nom" value="<?php echo $getnom?>" required>
                 <br><br><br>
                 
 
                 <label>Description :</label>
-                <input type="text" name="Description" value="<?php echo $getdescription?>">
+                <input type="text" name="Description" value="<?php echo $getdescription?>" required>
                 <br><br><br>
                
 
                 <label>Lien du site :</label>
-                <input type="text" name="Lien" value="<?php echo $getlien?>">
+                <input type="text" name="Lien" value="<?php echo $getlien?>" required>
                 <br><br><br>
                 
 
                 <label>Insérer l'image :</label>
-                <input type="file" name="Image" value="<?php echo $getimage?>">
+                <input type="file" name="Image" value="<?php echo $getimage?>" required>
                 <br><br><br>
                
 

@@ -337,15 +337,15 @@
 
         <br /><br />
 
-        <form action="" method="POST">
-          <input type="text" placeholder="veuillez entrer votre nom" />
+        <form action="contact.php" method="POST">
+          <input type="text" placeholder="veuillez entrer votre nom" name="name" required/>
           <br /><br /><br />
 
-          <input type="email" placeholder="veuillez entrer votre mail" />
+          <input type="email" placeholder="veuillez entrer votre mail"  name="mail" required/>
           <br /><br /><br />
 
           <div class="message">
-            <textarea placeholder="Votre message"></textarea>
+            <textarea placeholder="Votre message" name="message" required></textarea>
           </div>
           <br />
 

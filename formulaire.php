@@ -37,19 +37,19 @@
     <form class="upload"action="add.php" method="POST">
 
         <label>Nom du projet :</label>
-            <input type="text" name="Nom">
+            <input type="text" name="Nom" required>
                 <br><br><br>
 
         <label>Description :</label>
-            <input type="text" name="Description">
+            <input type="text" name="Description" required>
                 <br><br><br>
 
         <label>Lien du site :</label>
-            <input type="text" name="Lien">
+            <input type="text" name="Lien" required>
                 <br><br><br>
 
         <label>Insérer l'image :</label>
-            <input type="file" name="Image">
+            <input type="file" name="Image" required>
                 <br><br><br>
 
         <div>
