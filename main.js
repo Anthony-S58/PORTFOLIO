@@ -26,8 +26,8 @@
 
 
 const hamburger = document.querySelector('.hamburger');
-const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-
+const mobile_menu = document.querySelector('.header .nav-list ul');
+const links = document.querySelectorAll('.linkburger');
 
 let menuOpen = false;
 hamburger.addEventListener('click',() => {
@@ -39,12 +39,25 @@ hamburger.addEventListener('click',() => {
         menuOpen = false;
     }
 });
-// const mobile_menu = document.querySelector('header .nav-bar .nav-list ul');
-// const header = document.querySelector('.header .container');
 
-// hamburger.addEventListener('click', () => {
-//     hamburger.classList.toggle('active');
+let mobileOpen = false;
+hamburger.addEventListener('click',() => {
+    if (!mobileOpen) {
+        mobile_menu.classList.add('open');
+        mobileOpen = true;
+    }else {
+        mobile_menu.classList.remove('open');
+        mobileOpen = false;
+    }
+});
 
-//     console.log(hamburger);
-// });
-
+links.forEach(s => {
+    s.addEventListener('click',() => {
+        mobile_menu.classList.remove('open');
+        hamburger.classList.remove('open');
+        menuOpen = false;
+        mobileOpen = false;
+    console.log(menuOpen, mobileOpen);
+                
+    })
+});

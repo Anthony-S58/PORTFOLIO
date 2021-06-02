@@ -9,22 +9,6 @@
   </head>
 
   <body>
-    <!-- HEADER -->
-    <!-- <header id="header">
-      <div class="head">
-        <div class="logo"><span>A</span>nthony <span>S</span>IMONNEAU</div>
-          <div id="burger">
-            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-            <input type="checkbox" id="burger_checkbox"/>
-            <ul>
-              <li><a href="#about">A Propos</a></li>
-              <li><a href="#projet">Mes Projets</a></li>
-              <li><a href="#parcours">Mon Parcours</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>  
-      </div>
-    </header> -->
     <section id="header">
       <div class="header container">
         <div class="nav-bar">
@@ -34,10 +18,10 @@
           <div class="nav-list">
             <div class="hamburger"><div class="bar"></div></div>
               <ul>
-                <li><a href="#about" data-after="A Propos">A Propos</a></li>
-                <li><a href="#projet" data-after="Projets">Mes Projets</a></li>
-                <li><a href="#parcours" data-after="Parcours">Mon Parcours</a></li>
-                <li><a href="#contact" data-after="Contact">Contact</a></li>
+                <li><a href="#about"  class="linkburger" data-after="A Propos">A Propos</a></li>
+                <li><a href="#projet" class="linkburger" data-after="Projets">Mes Projets</a></li>
+                <li><a href="#parcours" class="linkburger" data-after="Parcours">Mon Parcours</a></li>
+                <li><a href="#contact" class="linkburger" data-after="Contact">Contact</a></li>
 
               </ul>
           </div>

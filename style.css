@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Pattaya & display = swap");
+@import url("https://fonts.googleapis.com/css2? family = Mate + SC & display = swap");
 .flip-box-front1, .flip-box-front2, .flip-box-front3, .flip-box-front {
   background-size: cover;
   background-position: center;
@@ -17,6 +19,7 @@ html {
   font-size: 10px;
   font-family: 'PT Sans Narrow', sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #header {
@@ -31,6 +34,21 @@ html {
 #header .header {
   min-height: 8vh;
   background-color: rgba(0, 0, 0, 0.58);
+}
+
+.brand h1 {
+  margin-left: 20px;
+  color: white;
+  font-family: 'Mate SC', serif;
+}
+
+.brand a {
+  text-decoration: none;
+}
+
+.brand span {
+  color: #FE9000;
+  font-family: 'Pattaya', sans-serif;
 }
 
 #header .nav-bar {
@@ -55,8 +73,8 @@ html {
   background-color: black;
   width: 100vw;
   height: 100vh;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,6 +90,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: .5s ease left;
+  transition: .5s ease left;
+}
+
+#header .nav-list ul.open {
+  left: 0%;
 }
 
 #header .nav-list ul a {
@@ -124,6 +148,8 @@ html {
   border-radius: 50%;
   position: relative;
   cursor: pointer;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 #header .hamburger .bar {
@@ -166,6 +192,20 @@ html {
 
 #header .hamburger.open .bar::after {
   top: 0;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #name {
@@ -1088,6 +1128,37 @@ label {
   .box {
     left: calc(50% - 40px);
     width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #header .hamburger {
+    display: none;
+  }
+  #header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: transparent;
+  }
+  #header .nav-list ul li {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  #header .nav-list ul li a {
+    font-size: 2rem;
+  }
+  #header .nav-list ul li a:hover {
+    background: black;
+  }
+  #header .nav-list ul a:hover {
+    color: #FE9000;
+  }
+  #header .nav-list ul a::after {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

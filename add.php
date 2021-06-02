@@ -22,7 +22,7 @@ $afficher = $_POST['Afficher'];
 
 
 $bdd->exec
-("INSERT INTO uploadprojet(Nom, Description, Lien, Image, Masquer)
-VALUES('$nom', '$description', '$lien', '$image', '$masquer')");
+("INSERT INTO uploadprojet(Nom, Description, Lien, Image, Afficher)
+VALUES('$nom', '$description', '$lien', '$image', '$afficher')");
 
 ?>

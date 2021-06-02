@@ -54,8 +54,8 @@
 
         <div>
             <label>Afficher :</label>
-            <label><input name="Masquer" type="radio" checked value="oui">oui</label>
-            <label><input name="Masquer" type="radio" value="non">non</label>
+            <label><input name="Afficher" type="radio" checked value="oui">oui</label>
+            <label><input name="Afficher" type="radio" value="non">non</label>
         </div>
 
                 <br><br><br>
