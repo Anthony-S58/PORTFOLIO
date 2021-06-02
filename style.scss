@@ -1,27 +1,20 @@
-// @import url('https://fonts.googleapis.com/css2? family = PT + Sans + Narrow & display = swap');
-@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
 @import url('https://fonts.googleapis.com/css2? family = Pattaya & display = swap');
 @import url('https://fonts.googleapis.com/css2? family = Mate + SC & display = swap');
 
-
-
-
-
+// variable couleur
 
 $primary-color: #191516;
 $secondary-color: #FEFEFF;
 $third-color: #FE9000;
 $color4: #3ed3cb;
 
+// variable flip
+
 %flip {
     background-size: cover;
     background-position: center;
-    border: 3px solid $color4;
-   
+    border: 3px solid $color4;  
 }
-
 
 * {
     padding: 0;
@@ -29,18 +22,31 @@ $color4: #3ed3cb;
     box-sizing: border-box;
 }
 
+
+
 html {
     font-size: 10px;
     font-family: 'PT Sans Narrow', sans-serif;
     overflow-x:hidden;
-    scroll-behavior: smooth;
-   
-    // cursor: url(/IMG/cursor.jpg);
-
-    
+    scroll-behavior: smooth; 
+    cursor: url(test.png), auto;    
 }
 
-// Menu nav hamburger
+body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: $primary-color; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: black; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid $color4; /* creates padding around scroll thumb */
+  }
+
+// MENU NAV HAMBURGER
 
 #header {
     position: fixed;
@@ -49,21 +55,19 @@ html {
     top: 0;
     width: 100vw;
     height: auto;
-
 }
 
 #header .header {
     min-height: 8vh;
     background-color: rgba(0, 0, 0, 0.580);
-
 }
 
 .brand h1 {
     margin-left: 20px;
    color: white;
-   font-family: 'Mate SC', serif;
-   
+   font-family: 'Mate SC', serif;  
 }
+
 .brand a{
     text-decoration: none;
 }
@@ -99,13 +103,12 @@ html {
     flex-direction : column;
     transition: .5s ease left;
 }
+
 // animation
 
 #header .nav-list ul.open {
     left:0%;
-
 }
-
 
 // fin animation
 
@@ -131,15 +134,11 @@ html {
     letter-spacing: 50px;
     z-index: -1;
     transition: .3s ease letter-spacing;
-
-
 }
 
 #header .nav-list ul li:hover a::after{
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
-
-
 }
 
 #header .hamburger {
@@ -155,7 +154,6 @@ html {
     position:relative;
     cursor: pointer;
     transform: scale(.8);
-
 }
 
 #header .hamburger .bar {
@@ -166,12 +164,10 @@ html {
     transition: .3s ease;
     z-index: -1;
     border-radius: 5px;
-
 }
 
 #header .hamburger .bar::after, 
 #header .hamburger .bar::before {
-
     position: absolute;
     content: '';
     height: 100%;
@@ -181,78 +177,27 @@ html {
     transition: .3s ease;
     transition-property: top, bottom ;
     border-radius: 5px;
-
 }
 
 #header .hamburger .bar::after {
     top:8px;
-
 }
 
 #header .hamburger .bar::before {
     bottom:8px;
 }
-// animation burger
-// #header .hamburger.open .bar {
-//     transform: translateX(-50px);
-//     background: transparent;
-
-// }
 
 #header .hamburger.open .bar::before {
-    // transform: rotate(45deg)translate(42.5px, -29.5px);
     bottom: 0;
-
 }
 
 #header .hamburger.open .bar::after {
-    // transform: rotate(-45deg)translate(39.5px, 30.5px);
     top: 0;
-
 }
 
+// FIN MENU BURGER
 
-
-
-
-
-
-
-
-
-
-
-
-// #header .hamburger {
-//     position: relative;
-//     display: flex;
-//     display: inline-block;
-//     justify-content: center;
-//     align-items: center;
-//     width: 60px;
-//     height: 60px;
-//     cursor: pointer;
-//     transition: all .5s ease-in-out;
-//     border : 3px solid $color4;
-//     z-index: 100;
-//     border-radius: 50%;
-// }
-
-// #header .bar {
-//     width: 30px;
-//     height:2px;
-//     background-color: $color4;
-//     border-radius: 5px;
-//     transition: all .5s ease-in-out;  
-//     position: relative;
-//     z-index: -1;
-
-// }
-
-
-// Fin menu burger
-
-// section nom et prenom
+// SECTION NOM ET PRENOM
 
 .container {
     min-height: 100vh;
@@ -260,8 +205,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-
-  }
+}
 
 #name {
     padding-top:80px;
@@ -269,8 +213,7 @@ html {
     background-size: cover;
     background-position: center;
     position: relative;
-    z-index: 1;
-   
+    z-index: 1;  
 }
 
     #name::after {
@@ -282,8 +225,7 @@ html {
         width: 100%;
         background-color:$primary-color;
         opacity: .7;
-        z-index: -1;
-        
+        z-index: -1;  
     }
     
         #name h1 {
@@ -292,18 +234,15 @@ html {
             font-size: 4rem;
             position: relative;
             color:$secondary-color;
-            
-
         }
         
-         #name h2 {
+        #name h2 {
  
             display: block;
             width: fit-content;
             font-size: 2rem;
             position: relative;
-            color:$color4;
-        
+            color:$color4; 
         } 
 
         #name .btn {
@@ -318,45 +257,39 @@ html {
             letter-spacing: .1rem;
             margin-top: 30px;   
             transition: .3s ease;  
-            transition-property: background-color, color;
-            
+            transition-property: background-color, color;   
         }
+
             #name .btn:hover {
                 background-color: $third-color;
-                color:$primary-color;
-                
-
+                color:$primary-color;    
             }
 
-#name .btn {
-display: inline-block;
-padding: 10px 30px;
-color:($third-color);
-background-color: transparent;
-border : 2px solid ($third-color);
-font-size: 2rem;
-text-transform: uppercase;
-letter-spacing: .1rem;
-margin-top: 30px;
+        a {
+            text-decoration: none;
+        }
 
-
-}
 
 // typing
+
 $bg: #1d1f20;
 $text-color: #d7b94c;
 $caret-color: white;
 $text-length: 16;
 $animation-time: 4s;
+
 // Center content
 
 // Basic style
+
 h1 {
   font-family: 'Inconsolata', Consolas, monospace;
   font-size: 4em;
   color: $text-color;
 }
+
 // Typing style
+
 .typing {
   position: relative;
   &::after {
@@ -370,10 +303,13 @@ h1 {
       caret 1s infinite;
   }
 }
+
 // Animation
+
 @keyframes typing {
   to { width: 0 }
 }
+
 @keyframes caret {
   50% { color: transparent }
 }
@@ -385,7 +321,6 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     margin-top: 50px;
-
 }
 
 .img img {
@@ -395,49 +330,37 @@ h1 {
 }
 
 
-// fin section nom et prenom
+// FIN SECTION NOM ET PRENOM
 
-
-// section à propos
-
+// SECTION A PROPOS
 
 #about {
     min-height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
-
 
 .portrait img{
     margin: 50px;
     border-radius: 5px;
-    border: 3px solid $color4;
-   
-    
+    border: 3px solid $color4;    
 }
-.texte h2{
-    
+
+.texte h2{    
     font-size:6em;
     text-shadow: 3px 3px 7px $primary-color;
-    color: $third-color;
-    
-    
-    
+    color: $third-color;        
 }
 
 .texte p{
     margin: 50px;
-    font-size: 3em;
-    
+    font-size: 3em;    
 }
 
-// Fin de section A propos
+// FIN DE SECTION A PROPOS
 
-// Section Mes Skills
-
-
+// SECTION MES SKILLS
 
 .skills {
     min-height: 10vh;
@@ -450,38 +373,27 @@ h1 {
 
     @keyframes slide {
     
-
-        0% {
-         
+        0% { 
           transform: translateX(100%);
-    
-
         }
+
         45% {
             transform: translateX(0);
         }
-        // 50% {
-        //     transform: translateX(0);
-        // }
+        
         55% {
-            transform: translateX(0);
-            
+            transform: translateX(0);    
         }
-        100% {
-         
-          transform: translateX(-100%);
-         
 
+        100% {
+          transform: translateX(-100%);
         }
-      }
+    }
     
 }
+    // FIN SECTION MES SKILLS
 
-
-   
-    // Fin section mes skills
-
-    // Section Mes projets
+    // SECTION MES PROJETS
 
     #projet  h2{
         margin:80px;
@@ -489,10 +401,7 @@ h1 {
         text-shadow: 2px 2px 4px $secondary-color;
         color: $color4;
         display: flex;
-        justify-content: center;
-        
-        
-        
+        justify-content: center;    
     }
 
     #projet {
@@ -500,17 +409,13 @@ h1 {
         background-image: url(IMG/fond3.jpg);
         background-size: cover;
         background-position: center;
-        position: relative;
-        
+        position: relative;    
     }
+
     .projets {
         display: inline-flex;
         margin:40px;
-        margin-top: 0px;
-        // justify-content: space-around;
-        // align-items: center;
-        // flex-direction: row;
-        
+        margin-top: 0px;   
     }
 
     .flip-box {
@@ -526,36 +431,28 @@ h1 {
         height:100%;
         text-align: center;
         transition: transform 0.8s;
-        transform-style: preserve-3d;
-        
+        transform-style: preserve-3d;    
     }
     
     .flip-box-front1 {
         background-image: url(IMG/projet1.png);
-       
-        @extend %flip;
-
-        
+        @extend %flip;   
     }
+
     .flip-box-front2 {
         background-image: url(IMG/projet2.png);
-        @extend %flip;
-
-
-       
-        
+        @extend %flip;   
     }
+
     .flip-box-front3 {
         background-image: url(IMG/projet3.png);
         @extend %flip;
-
     }
 
     .flip-box-front {
-
-
         @extend %flip;
     }
+
     .flip-box-back {
         background-color: rgba(54, 54, 63, 0.438);
         color: white;
@@ -579,19 +476,14 @@ h1 {
         width: 80px;
         cursor: pointer;
         transition: .3s ease;  
-        transition-property: background-color, color;
-            
-        }
-            .flip-box-back button:hover {
-                background-color: $color4;
-                color:$primary-color;
-                
+        transition-property: background-color, color;         
+    }
 
-            }
+    .flip-box-back button:hover {
+        background-color: $color4;
+        color:$primary-color;
+    }
     
-
-
-
     .flip-box-front, .flip-box-front1, .flip-box-front2, .flip-box-front3, .flip-box-back {
         backface-visibility: hidden;
         position: absolute;
@@ -603,9 +495,9 @@ h1 {
         transform: rotateY(180deg);
     }
 
-//    Fin Section Projets
+//   FIN SECTION PROJETS
 
-// Section Parcours
+// SECTION PARCOURS
 
 #parcours {
         min-height: 100vh;
@@ -616,30 +508,22 @@ h1 {
         display: block;
         justify-content: center;
         text-align: center;
-
 }
 
 .parcours h2{
     padding-top: 80px;
-    
     margin:20px;
     font-size:6em;
     text-shadow: 3px 3px 7px $primary-color;
-    color: $third-color;
-    
-    
-    
+    color: $third-color;  
 }
 
 .box-timeline {
-
 	width: 100%;
 	height:2100px;
-	// background : #f1f1f1;
 	position: relative;
 	padding : 80px 0 250px 0;
 	margin-bottom: 100px;
-
 }
 
 .ligne {
@@ -672,14 +556,12 @@ h1 {
 .r7 {top:1918px;}
 
 .box {
-
 	color : grey;
 	width:400px;
 	min-height:200px;
 	padding:20px;
 	border-radius:3px;
 	height: auto;
-	// background:#f1f1f1;
 	box-shadow: 0 10px 15px rgba(0,0,0,0.5);
 	position: absolute;
 	left:50%;
@@ -690,26 +572,32 @@ h1 {
 	top:80px;
 	left: calc(50% + 270px);
 }
+
 .b2{
 	top:386px;
 	left: calc(50% - 270px);
 }
+
 .b3{
 	top:692px;
 	left: calc(50% + 270px);
 }
+
 .b4{
 	top:1000px;
 	left: calc(50% - 270px);
 }
+
 .b5{
 	top:1306px;
 	left: calc(50% + 270px);
 }
+
 .b6{
 	top:1612px;
 	left: calc(50% - 270px);
 }
+
 .b7{
 	top:1918px;
 	left: calc(50% + 270px);
@@ -734,31 +622,25 @@ h1 {
 	margin-top: 10px;
 }
 
-// Fin section Parcours
+// FIN SECTION PARCOURS
 
-// Section Contact
+// SECTION CONTACT
 
 .contact {
-        // background-size: cover;
-        // background-position: center;
-        // position: relative;
     min-height: 100vh;
     width:100%;
     display: flex;
     background-image:url(IMG/fond13.jpg);
     background-position: center;
-
     justify-content: space-around;
     text-align: center;
     flex-direction: column;
 }
 
-.contact h2{
-    
+.contact h2{   
     font-size:6em;
     text-shadow: 3px 3px 7px $primary-color;
-    color: $color4; 
-    
+    color: $color4;     
 }
 
 textarea {
@@ -767,13 +649,10 @@ textarea {
     border: 3px solid $color4;
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 2em;
-    // color: rgba(131, 48, 48, 0.603);
     background-color: rgba(0, 0, 0, 0.404);
     resize: none;
     border-radius: 15px;
-    color:$secondary-color;
-    
-
+    color:$secondary-color;    
 }
 
 ::placeholder {
@@ -787,14 +666,13 @@ input {
     font-size:2em;
     background-color: rgba(0, 0, 0, 0.404);
     border-radius: 15px;
-    color:$secondary-color;
-
-
-    
+    color:$secondary-color;   
 }
+
 input:focus {
     outline:  none;
 }
+
 textarea:focus {
     outline:  none;
 }
@@ -804,9 +682,6 @@ textarea:focus {
     height:70px;
     border: 3px solid $color4;
     font-size: 3em;
-   
-   
-   
     color:$color4;
     background-color: rgba(0, 0, 0, 0.404);
     border-radius: 25px;
@@ -814,31 +689,28 @@ textarea:focus {
     letter-spacing: .1rem;
     margin-top: 30px;   
     transition: .3s ease;  
-    transition-property: background-color, color;
-    
+    transition-property: background-color, color;    
 }
+
     .valider:hover {
         background-color: $color4;
         color:$primary-color;
         cursor: pointer;
-        
-
     }
 
-    // Fin section contact
+    // FIN SECTION CONTACT
 
-    // Footer
+    // FOOTER
+
     .footer p{
         display: flex;
-
         background-color:$primary-color;
         justify-content: center;
         align-items: center;
         color: $secondary-color;
-        
-
     }
 
+    // FIN TOOTER
 
     // PHP
 
@@ -846,14 +718,11 @@ textarea:focus {
         display: flex;
         justify-content: center;
         margin-top: 100px;
-
     }
 
-    .logout img{
-        
+    .logout img{  
         height: 100px;
-        width:80px;
-        
+        width:80px;  
     }
 
 // ADMIN PHP
@@ -861,6 +730,7 @@ textarea:focus {
 .admin {
     background:rgba(128, 128, 128, 0.733);
 }
+
     .admin_space h1{
         width:auto;
         margin:50px;
@@ -874,43 +744,46 @@ textarea:focus {
         padding:80px;
         margin:80px;
         display: flex;
-        justify-content: center;
-        
+        justify-content: center;   
     }
     
-    .connexion input{
-        
+    .connexion input{ 
         height: 50px;
         color:black;
         display: flex;
-        justify-content: center;
-           
+        justify-content: center;      
+    }
+
+    .user{
+        cursor: pointer;    
+    }
+
+    .user:hover{
+        background-color: $color4;
     }
 
     // SOMMAIRE PHP
+
 .sommaire {
     background-color: grey;
 }
-    .sommaire_titre h1{
 
+    .sommaire_titre h1{
         width:auto;
         margin:50px;
         display: flex;
         justify-content:center;
         font-size:6em;
-        color:$primary-color;
-        
+        color:$primary-color;    
     }
 
     section .welcome {
-
         display: flex;
         text-align: center;
         justify-content: center;
         font-size:6em;
         text-shadow: 3px 3px 7px $primary-color;
         color: $third-color;
-
     }
 
     .sommaire_button {
@@ -918,10 +791,7 @@ textarea:focus {
         justify-content: center;
         align-items: center;
         margin:10px;
-        gap: 50px;
-        
-
-        
+        gap: 50px;    
     }
 
     .sommaire_button button{
@@ -931,9 +801,7 @@ textarea:focus {
         border-radius:10px;
     }
 
-    
-
-    // Formulaire PHP
+    // FORMULAIRE PHP
 
     .form_php {
         background: grey;
@@ -947,11 +815,12 @@ textarea:focus {
         color: black;
         margin:80px;
     }
+
     label {
         font-size:2em;
     }
-    .upload {
-        
+
+    .upload {   
         text-align: center;
         justify-content: center;
         flex-direction: column;
@@ -960,13 +829,10 @@ textarea:focus {
 
     .upload input {
         border:1px solid $color4;
-       
-        padding: 5px;   
-        
+        padding: 5px;     
     }
 
     .upload button {
-
     height:50px;
     width:100px;
     font-size: 20px;
@@ -975,6 +841,7 @@ textarea:focus {
     border-radius: 10px;
     cursor: pointer;
     }
+
       // PROJET PHP
 
     .titre_modif h1{
@@ -983,13 +850,14 @@ textarea:focus {
         display: flex;
         justify-content: center;
     }
+
     .modif_projet {
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-
     }
+
     .titre_modif h2{
         justify-content: center;
     }
@@ -1003,11 +871,10 @@ textarea:focus {
         text-decoration: underline;
     }
 
-  
-
     .gestprojet {
         background:grey;
     }
+
     .titre_modif h1{
         color: black;
     }
@@ -1027,11 +894,7 @@ textarea:focus {
         height:50px;
         width:150px;
         font-size: 20px;
-        
-       
-
     }
-
 
   .mod {
         background: rgba(255, 166, 0, 0.699);
@@ -1039,10 +902,9 @@ textarea:focus {
         border-radius: 10px; 
     }
 
-        .mod:hover {
+    .mod:hover {
         background: rgba(255, 166, 0, 0.904);
-
-        }
+    }
 
     .sup {
         background: rgba(255, 0, 0, 0.658);
@@ -1050,9 +912,9 @@ textarea:focus {
         border-radius: 10px;
     }
 
-        .sup:hover {
-            background: rgba(255, 0, 0, 0.904);
-        }
+    .sup:hover {
+        background: rgba(255, 0, 0, 0.904);
+    }
 
     .mod a, .sup a {
         color:white;
@@ -1064,6 +926,7 @@ textarea:focus {
         color:black;
         font-size: 5em;
     }
+
     .php_modif {
         background:grey;
         display: flex;
@@ -1075,19 +938,16 @@ textarea:focus {
         background:rgb(177, 167, 167);
     }
 
-//  div {
-//         border: 1px solid red;
-//     }
-//    media queries responsive 
+//   MEDIA QUERIES RESPONSIVE 
 
     @media screen and (max-width:1000px) {
 
-        // header
+        // HEADER
+
         .head {
             height:80px;
             justify-content: center;
-            padding-bottom:25px;     
-            
+            padding-bottom:25px;         
         }
         
 
@@ -1096,20 +956,19 @@ textarea:focus {
             overflow: hidden;
         }
 
-        // section  a propos
+        // SECTION A PROPOS
 
         #about {
             flex-direction: column;
         }
 
-        // section skills
+        // SECTION SKILLS
+
         .skills {
         flex-flow: wrap;
         }
-
-
-        
-        // section projets
+    
+        // SECTION PROJETS
 
         .projets {
             flex-direction: column;
@@ -1123,19 +982,19 @@ textarea:focus {
             margin-right:10px;
 
         }
+
         .flip-box-back {
             padding:10px;
             margin-left:10px;
             margin-right:10px;
         }
 
+        // SECTION PARCOURS
 
-        // section parcours
         .ligne {
             position:relative;
             left:190px;
             height: 1880px;
-    
         }
     
         .rond {
@@ -1149,8 +1008,14 @@ textarea:focus {
             width:350px;
         }
     }
- 
-// fin responsive
+    
+    // SECTION CONTACT
+
+    .contact h2 {
+        margin: 80px;
+    }
+
+// FIN RESPONSIVE
 
 // media queries grand ecran*
 
@@ -1172,6 +1037,7 @@ textarea:focus {
         display: inline-block;
         margin-left: 5px;
     }
+
     #header .nav-list ul li a{
         font-size: 2rem;
     }
@@ -1180,16 +1046,14 @@ textarea:focus {
         background: black;
     }
 
-
-
     #header .nav-list ul a:hover {
         color: $third-color;
     }
 
-
     #header .nav-list ul a::after{
         display: none;
-
     }
 
 }
+
+// Fin media queries grand ecran

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2? family = Pattaya & display = swap");
 @import url("https://fonts.googleapis.com/css2? family = Mate + SC & display = swap");
 .flip-box-front1, .flip-box-front2, .flip-box-front3, .flip-box-front {
@@ -20,6 +18,26 @@ html {
   font-family: 'PT Sans Narrow', sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  cursor: url(test.png), auto;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #191516;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #3ed3cb;
+  /* creates padding around scroll thumb */
 }
 
 #header {
@@ -271,16 +289,8 @@ html {
   color: #191516;
 }
 
-#name .btn {
-  display: inline-block;
-  padding: 10px 30px;
-  color: #FE9000;
-  background-color: transparent;
-  border: 2px solid #FE9000;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  margin-top: 30px;
+a {
+  text-decoration: none;
 }
 
 h1 {
@@ -857,6 +867,14 @@ textarea:focus {
           justify-content: center;
 }
 
+.user {
+  cursor: pointer;
+}
+
+.user:hover {
+  background-color: #3ed3cb;
+}
+
 .sommaire {
   background-color: grey;
 }
@@ -1129,6 +1147,10 @@ label {
     left: calc(50% - 40px);
     width: 350px;
   }
+}
+
+.contact h2 {
+  margin: 80px;
 }
 
 @media only screen and (min-width: 1200px) {
