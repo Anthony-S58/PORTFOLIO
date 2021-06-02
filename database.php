@@ -10,9 +10,9 @@
     <body>
         <!-- <h1>Bases de données MySQL</h1>   -->
         <?php
-            $servername = 'promo-72.codeur.online';
-            $username = 'anthonys787';
-            $password = '4nHI4LlNyi64jA==';
+            $servername = 'localhost';
+            $username = 'root';
+            $password = '';
             
             //On essaie de se connecter
             try{
